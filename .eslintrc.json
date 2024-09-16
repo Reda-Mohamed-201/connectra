@@ -1,0 +1,24 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended"
+    ],
+    "plugins": ["@typescript-eslint", "react", "react-hooks"],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "react/prop-types": "off", // Since you're using TypeScript, prop-types are usually not needed
+      "@typescript-eslint/explicit-module-boundary-types": "off" // Optional rule, adjust based on preference
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+  
